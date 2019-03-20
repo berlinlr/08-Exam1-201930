@@ -17,7 +17,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 2.  READ the doc-string for the  sum_of_digits  and   is_prime
+# DONE: 2.  READ the doc-string for the  sum_of_digits  and   is_prime
 # functions defined below.  They are the same as what you have seen before.
 # After you UNDERSTAND the doc-string (JUST the doc-string, NOT the code),
 # ASKING QUESTIONS AS NEEDED, change the above _TODO_ to DONE.
@@ -198,8 +198,11 @@ def problem3a(a, b):
     #    **  For full credit you must appropriately
     #    **  use (call) the appropriate function(s) that are DEFINED ABOVE.
     ###########################################################################
+    count=0
+    n=2
+    for k in range(m-2):
 
-
+# did not finish this question
 def run_test_problem3b():
     """ Tests the   problem3b   function. """
     print()
@@ -285,7 +288,15 @@ def problem3b(m, x):
     #    **  For full credit you must appropriately
     #    **  use (call) the appropriate function(s) that are DEFINED ABOVE.
     ###########################################################################
-
+    count=0
+    n=2
+    for k in range(m-2):
+        if is_prime(k+2):
+            n= n*(k+2)
+        else:
+            count=count
+    count=count+sum_of_digits(n)
+    return count
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
