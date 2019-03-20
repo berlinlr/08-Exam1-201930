@@ -84,7 +84,17 @@ def problem4(point1, point2, n, window):
     #          Tests have been written for you (above).
     # IMPORTANT: For PARTIAL CREDIT, ignore the colors.
     # -------------------------------------------------------------------------
+    point1.attach_to(window)
+    point2.attach_to(window)
+    new_point=point1
+    for k in range(n):
+        new_point=rg.Point(new_point.x + (4*n),new_point.y + (4*n))
+        new_point.attach_to(window)
+        window.render(0.5)
 
+
+
+    window.render()
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
