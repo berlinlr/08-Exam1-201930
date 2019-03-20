@@ -202,7 +202,7 @@ def problem3a(a, b):
     n=2
     for k in range(m-2):
 
-# did not finish this question
+# did not finish this question.
 def run_test_problem3b():
     """ Tests the   problem3b   function. """
     print()
